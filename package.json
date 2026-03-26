@@ -18,11 +18,14 @@
     "productName": "CoppyCat",
     "mac": {
       "category": "public.app-category.utilities",
-      "target": ["dmg"],
+      "target": ["dmg", "zip"],
       "icon": "assets/icon.png",
       "extendInfo": {
         "LSUIElement": 1
       }
+    },
+    "dmg": {
+      "writeUpdateInfo": false
     }
   }
 }

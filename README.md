@@ -1,7 +1,7 @@
 # 🐱 CoppyCat
 
 <p align="center">
-  <img src="build/icon.png" width="128" alt="CoppyCat Icon">
+  <img src="assets/icon.png" width="128" alt="CoppyCat Icon">
 </p>
 
 <p align="center">
