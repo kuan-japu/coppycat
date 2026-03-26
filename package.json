@@ -1,0 +1,28 @@
+{
+  "name": "coppycat",
+  "version": "1.0.0",
+  "description": "A blazing fast, funny Clipboard Manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --mac dmg"
+  },
+  "author": "KJ <japukuan@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.personal.coppycat",
+    "productName": "CoppyCat",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": ["dmg"],
+      "icon": "assets/icon.png",
+      "extendInfo": {
+        "LSUIElement": 1
+      }
+    }
+  }
+}

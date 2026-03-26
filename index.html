@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CoppyCat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <span class="title">🐱 CoppyCat</span>
+        <div class="controls">
+            <button id="clearBtn" class="btn">Clear</button>
+            <button id="quitBtn" class="btn quit-btn">Quit</button>
+        </div>
+    </div>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search history..." autofocus>
+    </div>
+    <div class="list" id="historyList">
+        <!-- Items injected by JS -->
+    </div>
+
+    <!-- Modal for Parsing options -->
+    <div id="parseModal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modalTitle">Tùy chọn Mở rộng</h3>
+            <p id="modalSnippet" class="snippet"></p>
+            <div class="actions">
+                <button id="btnCopyOrig" class="btn primary">Copy nội dung</button>
+                <button id="btnExtractUrls" class="btn">Trích xuất Links (URL)</button>
+                <button id="btnFormatJson" class="btn">Định dạng JSON</button>
+                <button id="btnDelete" class="btn danger">Xóa mục này</button>
+            </div>
+            <button id="btnCloseModal" class="btn block">Hủy bỏ</button>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
